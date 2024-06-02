@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_open_close_times_open_close_times",
+  "info": {
+    "displayName": "Open_Close_Times",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "open_time": {
+      "type": "string"
+    },
+    "close_time": {
+      "type": "string"
+    },
+    "interval_name": {
+      "type": "string"
+    }
+  }
+}

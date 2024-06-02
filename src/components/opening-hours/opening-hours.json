@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_opening_hours_opening_hours",
+  "info": {
+    "displayName": "opening_hours",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "day_interval": {
+      "type": "string"
+    },
+    "Times": {
+      "displayName": "Open_Close_Times",
+      "type": "component",
+      "repeatable": true,
+      "component": "open-close-times.open-close-times"
+    }
+  }
+}

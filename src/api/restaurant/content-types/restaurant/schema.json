@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "singularName": "restaurant",
+    "pluralName": "restaurants",
+    "displayName": "Restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "opening_hours": {
+      "displayName": "opening_hours",
+      "type": "component",
+      "repeatable": true,
+      "component": "opening-hours.opening-hours"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "restaurants"
+    }
+  }
+}
